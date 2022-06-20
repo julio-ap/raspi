@@ -1,4 +1,4 @@
-
+import serial
 from time import sleep
 import signal
 import firebase_admin
@@ -72,4 +72,5 @@ estado = Thread(target = iot.database)
 estado.daemon = True
 estado.start()
 
-signal.pause()
+
+#signal.pause()
